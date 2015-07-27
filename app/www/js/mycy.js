@@ -4,8 +4,8 @@ var cy;
 function mycy(){
  cy = cytoscape({
       	container: document.getElementById('cy'),
-        layout: { name: 'preset' }
-  	
+        layout: { name: 'preset' },
+	style:[ { selector: 'node', style: {'content': 'data(id)' }}]  	
 	});
 
     
